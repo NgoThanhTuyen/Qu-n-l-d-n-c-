@@ -7,6 +7,7 @@ import CompanyPage from "./company_page/CompanyPage"
 import LocationPage from "./location_page/LocationPage"
 import DepartmentPage from "./department_page/DepartmentPage"
 import OrganizePage from "./organize_page/OrganizePage"
+import LogInPage from "./login_page/LogInPage"
 
 export {
     DashboardPage,
@@ -18,5 +19,5 @@ export {
     LocationPage,
     DepartmentPage,
     OrganizePage,
-
+    LogInPage
 }
