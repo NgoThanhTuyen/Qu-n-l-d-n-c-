@@ -5,6 +5,7 @@ function DashboardPage() {
   return (
     <div>
       <h1> nguyen duc duy</h1>
+      <h1> Ngô than tuyển</h1>
       <MapPageDashboard/>
     </div>
   )
