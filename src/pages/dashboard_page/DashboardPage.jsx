@@ -1,8 +1,11 @@
 import React from 'react'
+import { MapPageDashboard } from './components'
 
 function DashboardPage() {
   return (
-    <div>DashboardPage</div>
+    <div>
+      <MapPageDashboard/>
+    </div>
   )
 }
 
