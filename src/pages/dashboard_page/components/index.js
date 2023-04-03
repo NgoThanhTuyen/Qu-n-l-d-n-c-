@@ -1,3 +1,4 @@
-import MapPageDashboard from './map_page_dashboard/MapPageDashboard'
- import ChartPage from './chart_page/ChartPage'
-export {    ChartPage,MapPageDashboard }
+import TopPageDashboard from './top_page_dashboard/TopPageDashboard'
+import ChartPage from './chart_page/ChartPage'
+import ViewMore from './view_more/ViewMore'
+export { ChartPage, TopPageDashboard , ViewMore}
