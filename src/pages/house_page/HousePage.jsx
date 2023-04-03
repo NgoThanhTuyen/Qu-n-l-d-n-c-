@@ -28,7 +28,7 @@ function HousePage(props) {
             <Card bodyStyle={{ padding: 0 }}>
                 <TableHouse
                     data={organizeTable}
-                    isLoading={isLoadingHousePage}
+                    // isLoading={isLoadingHousePage}
                     onChange={(pagInfo) => {
                         const newFilters = { ...filters, PageIndex: pagInfo.current }
                         setFilters(newFilters)

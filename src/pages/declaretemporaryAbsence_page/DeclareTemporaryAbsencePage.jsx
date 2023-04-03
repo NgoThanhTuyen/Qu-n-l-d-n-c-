@@ -28,7 +28,7 @@ function DeclareTemporaryAbsencePage(props) {
             <Card bodyStyle={{ padding: 0 }}>
                 <TableDeclaretemporaryAbsence
                     data={organizeTable}
-                    isLoading={isLoadingDeclareTemporaryAbsencePage}
+                    // isLoading={isLoadingDeclareTemporaryAbsencePage}
                     onChange={(pagInfo) => {
                         const newFilters = { ...filters, PageIndex: pagInfo.current }
                         setFilters(newFilters)
