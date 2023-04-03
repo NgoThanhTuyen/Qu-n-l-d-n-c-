@@ -15,14 +15,14 @@ function MapPageDashboard() {
                             </>
                         }
                         bordered={false}
-                        className="custom-card"
+                        className='custom-card'
                     >
                         <ViewMore />
 
                         <div className='font_dasboard'>
-                            <h1 style={{color:'#52c41a'}}> khu vực nhà ở  : </h1>
-                            <h1  style={{color:'#52c41a'}}> khu vực nhà </h1>
-                            <h1  style={{color:'#52c41a'}}> khu vực nhà ở </h1>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
                         </div>
                     </Card>
                 </Col>
@@ -34,13 +34,12 @@ function MapPageDashboard() {
                             </>
                         }
                         bordered={false}
-                        className="custom-card"
-
+                        className='custom-card'
                     >
-                          <div className='font_dasboard'>
-                            <h1 style={{color:'#52c41a'}}> khu vực nhà ở  : </h1>
-                            <h1  style={{color:'#52c41a'}}> khu vực nhà </h1>
-                            <h1  style={{color:'#52c41a'}}> khu vực nhà ở </h1>
+                        <div className='font_dasboard'>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
                         </div>
                         <ViewMore />
                     </Card>
@@ -53,9 +52,13 @@ function MapPageDashboard() {
                             </>
                         }
                         bordered={false}
-                        className="custom-card"
-
+                        className='custom-card'
                     >
+                        <div className='font_dasboard'>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
+                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
+                        </div>
                         <ViewMore />
                     </Card>
                 </Col>
