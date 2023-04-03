@@ -37,6 +37,11 @@ function MapPageDashboard() {
                         className="custom-card"
 
                     >
+                          <div className='font_dasboard'>
+                            <h1 style={{color:'#52c41a'}}> khu vực nhà ở  : </h1>
+                            <h1  style={{color:'#52c41a'}}> khu vực nhà </h1>
+                            <h1  style={{color:'#52c41a'}}> khu vực nhà ở </h1>
+                        </div>
                         <ViewMore />
                     </Card>
                 </Col>
