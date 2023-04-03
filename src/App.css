@@ -1,5 +1,4 @@
-@media (max-width: 1024px) {
-}
+@media (max-width: 1024px) {}
 
 /* .login-page {
     background-image: url(./images/bg-login.svg);
@@ -193,13 +192,13 @@
     border-bottom-right-radius: 0 !important;
 }
 
-.expand-row-detail > td.ant-table-cell,
-.expand-row-detail > td.ant-table-cell:hover {
+.expand-row-detail>td.ant-table-cell,
+.expand-row-detail>td.ant-table-cell:hover {
     background-color: #fff;
     padding: 0 !important;
 }
 
-.expand-row-detail .ant-tabs-top > .ant-tabs-nav {
+.expand-row-detail .ant-tabs-top>.ant-tabs-nav {
     margin-bottom: 0;
 }
 
@@ -369,20 +368,20 @@
 }
 
 .ant-table.ant-table-middle .ant-table-footer,
-.ant-table.ant-table-middle .ant-table-tbody > tr > td,
-.ant-table.ant-table-middle .ant-table-thead > tr > th,
+.ant-table.ant-table-middle .ant-table-tbody>tr>td,
+.ant-table.ant-table-middle .ant-table-thead>tr>th,
 .ant-table.ant-table-middle .ant-table-title,
-.ant-table.ant-table-middle tfoot > tr > td,
-.ant-table.ant-table-middle tfoot > tr > th {
+.ant-table.ant-table-middle tfoot>tr>td,
+.ant-table.ant-table-middle tfoot>tr>th {
     padding: 8px 8px;
 }
 
 .ant-table.ant-table-small .ant-table-footer,
-.ant-table.ant-table-small .ant-table-tbody > tr > td,
-.ant-table.ant-table-small .ant-table-thead > tr > th,
+.ant-table.ant-table-small .ant-table-tbody>tr>td,
+.ant-table.ant-table-small .ant-table-thead>tr>th,
 .ant-table.ant-table-small .ant-table-title,
-.ant-table.ant-table-small tfoot > tr > td,
-.ant-table.ant-table-small tfoot > tr > th {
+.ant-table.ant-table-small tfoot>tr>td,
+.ant-table.ant-table-small tfoot>tr>th {
     padding: 4px 8px;
 }
 
@@ -399,11 +398,11 @@
     color: #fff;
 }
 
-.table-row-input .ant-table-tbody > tr.ant-table-row-level-0:hover > td {
+.table-row-input .ant-table-tbody>tr.ant-table-row-level-0:hover>td {
     background: unset;
 }
 
-.table-row-input .ant-table-thead > tr > th {
+.table-row-input .ant-table-thead>tr>th {
     background-color: #fafafa !important;
 }
 
@@ -435,22 +434,27 @@
 .ant-timeline p {
     margin-bottom: 0;
 }
+
 .modal-content {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 ul {
     font-size: 1.2em;
     margin: 50px;
 }
+
 li {
     margin-bottom: 10px;
 }
+
 strong {
     margin-right: 10px;
     text-align: right;
 }
+
 .text {
     font-size: 30px;
     color: #000000;
@@ -462,4 +466,12 @@ strong {
 
 .ant-result {
     padding: 15px 32px;
+}
+
+.custom-card {
+    height: 250px;
+}
+
+.font_dasboard{
+    font-size: 18px;
 }
