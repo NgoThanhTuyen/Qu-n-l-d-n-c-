@@ -1,16 +1,10 @@
-import { Button, Table, Modal, Input, Space, Form,Card } from 'antd'
+import { Button, Table, Modal, Input, Space, Form } from 'antd'
 import React, { useState } from 'react'
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons'
 import RowAction from '../../components/row_action/RowAction';
-import {FitleOrganize, TableOriganize, ModalEdit, ModalAdd} from './components'
-function OrganizePage() {
+function QuietPage() {
 
-    const [filters, setFilters] = useState({
-        Key_Search: '',
-    })
     const [isModalOpen, setIsModalOpen] = useState(false);
-    
-    const [isShowModalAdd, setIsShowModalAdd] = useState(false)
 
     const showModal = () => {
         setIsModalOpen(true);
@@ -115,15 +109,7 @@ function OrganizePage() {
     return (
         <div className='HomePage'>
             <header className='HomePage-header'>
-            <Card size='small'>
-                <FitleOrganize
-                    filters={filters}
-                    onAdd={() => setIsShowModalAdd(true)}
-                    onChange={(values) => {
-                        setFilters(values)
-                    }}
-                />
-            </Card>
+        
                 <>
                     <Button type="primary" onClick={showModal}> Thêm mới </Button>
                 
@@ -204,10 +190,10 @@ function OrganizePage() {
                         />
                     </Form.Item>
                 </Modal>
-
+                
             </header>
         </div>
     )
 }
 
-export default OrganizePage
+export default QuietPage

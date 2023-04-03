@@ -1,23 +1,32 @@
-import DashboardPage from "./dashboard_page/DashboardPage";
 import LayOutPage from "./layout_page/LayOutPage";
-import UserOrganizePage from "./user_organize_page/UserOrganizePage"
-import UserCompanyPage from "./user_company_page/UserCompanyPage"
-import UserOperatePage from "./user_operate_page/UserOperatePage"
-import CompanyPage from "./company_page/CompanyPage"
-import LocationPage from "./location_page/LocationPage"
-import DepartmentPage from "./department_page/DepartmentPage"
-import OrganizePage from "./organize_page/OrganizePage"
+
 import LogInPage from "./login_page/LogInPage"
 
+import DashboardPage from "./dashboard_page/DashboardPage";
+
+import HousePage from "./house_page/HousePage"
+import QuietPage from "./quiet_page/QuietPage"
+import EnvironmentPage from "./environment_page/EnvironmentPage"
+import PowerOutageSchedulePage from "./poweroutageschedulePage_page/PowerOutageSchedulePage"
+
+
+import TemporaryRegistrationPage from "./temporaryregistration_page/TemporaryRegistrationPage"
+import DeclareTemporaryAbsencePage from "./declaretemporaryAbsence_page/DeclareTemporaryAbsencePage"
+import DeclarationOfResidencePage from "./declarationofResidence_page/DeclarationOfResidencePage"
+
 export {
-    DashboardPage,
     LayOutPage,
-    UserOrganizePage,
-    UserCompanyPage,
-    UserOperatePage,
-    CompanyPage,
-    LocationPage,
-    DepartmentPage,
-    OrganizePage,
-    LogInPage
+    
+    LogInPage,
+
+    DashboardPage,
+
+    HousePage,
+    QuietPage,
+    PowerOutageSchedulePage,
+    EnvironmentPage,
+    
+    TemporaryRegistrationPage,
+    DeclareTemporaryAbsencePage,
+    DeclarationOfResidencePage,
 }

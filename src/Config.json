@@ -1,0 +1,11 @@
+{
+    "dateFormatProduction": "DD/MM/YY",
+    "dateFormat": "DD/MM/YYYY",
+    "dateTimeFormat": "DD/MM/YYYY HH:mm",
+    "dateTimeSecondFormat": "DD/MM/YYYY HH:mm:ss",
+    "timeFormat": "HH:mm",
+    "reqInputMsg": "'${label}' is required",
+    "reqSelectMsg": "'${label}' is required",
+    "minMsg": "At least ${min} characters",
+    "maxMsg": "Up to ${max} characters"
+}

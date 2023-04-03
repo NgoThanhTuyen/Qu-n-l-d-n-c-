@@ -7,16 +7,16 @@ const { Header, Content, Sider } = Layout
 
 const menuItems = [
     getItem('dashboard-chart-view,dashboard-report-export,dashboard-report-view', <Link to='/dashboard'>Tổng quan</Link>, 'dashboard', <DashboardOutlined />, 'Tổng quan'),
-    getItem('category-organize-view,category-company-view,category-location-view,category-department-view', 'Danh mục', 'category', <TagsOutlined />, '', [
-        getItem('category-organize-view', <Link to='/category/organize'>Tổ chức</Link>, 'category-organize', '', 'Danh mục / Tổ chức'),
-        getItem('category-company-view', <Link to='/category/company'>Đơn vị</Link>, 'category-company', '', 'Danh mục / Đơn vị'),
-        getItem('category-location-view', <Link to='/category/location'>Địa điểm</Link>, 'category-location', '', 'Danh mục / Địa điểm'),
-        getItem('category-department-view', <Link to='/category/department'>Phòng ban</Link>, 'category-department', '', 'Danh mục / Phòng ban'),
+    getItem('area-house-view,area-quiet-view,area-poweroutageschedule-view,area-environment-view', 'Khu vực trảng bom', 'area', <TagsOutlined />, '', [
+        getItem('area-house-view', <Link to='/area/house'>Quản lý nhà ở</Link>, 'area-house', '', 'Khu vực trảng bom / Quản lý nhà ở'),
+        getItem('area-quiet-view', <Link to='/area/quiet'>Quản lý trật tự</Link>, 'area-quiet', '', 'Khu vực trảng bom / Quản lý trật tự'),
+        getItem('area-environment-view', <Link to='/area/environment'>Quản lý môi trường</Link>, 'area-environment', '', 'Khu vực trảng bom / Quản lý môi trường'),
+        getItem('area-poweroutageschedule-view', <Link to='/area/poweroutageschedule'>Quản lý lịch cúp điện</Link>, 'area-poweroutageschedule', '', 'Khu vực trảng bom / Quản lý lịch cúp điện'),
     ]),
-    getItem('user-organize-view,user-company-view,user-operate-view', 'Tài khoản', 'user', <UnlockOutlined />, '', [
-        getItem('user-organize-view', <Link to='/user/organize'>Tổ chức</Link>, 'user-organize', '', 'Tài khoản / Tổ chức'),
-        getItem('user-company-view', <Link to='/user/company'>Đơn vị</Link>, 'user-company', '', 'Tài khoản / Đơn vị'),
-        getItem('user-operate-view', <Link to='/user/operate'>Vận hành</Link>, 'user-operate', '', 'Tài khoản / Vận hành'),
+    getItem('information-declaretemporaryAbsence-view,information-declarationofResidence-view,information-temporaryregistration-view', 'Thông tin công dân', 'information', <UnlockOutlined />, '', [
+        getItem('information-declaretemporaryAbsence-view', <Link to='/information/declaretemporaryAbsence'>Khai báo tạm vắng</Link>, 'usinformationer-declaretemporaryAbsence', '', 'Thông tin công dân / Khai báo tạm vắng'),
+        getItem('information-declarationofResidence-view', <Link to='/information/declarationofResidence'>Khai báo lưu trú</Link>, 'information-declarationofResidence', '', 'Thông tin công dân / Khai báo lưu trú'),
+        getItem('information-temporaryregistration-view', <Link to='/information/temporaryregistration'>Đăng ký tạm trú</Link>, 'information-temporaryregistration', '', 'Thông tin công dân / Đăng ký tạm trú'),
     ]),
     // getItem('no-auth', 'Nhân sự', 'staff', <UserOutlined />, '', [
     //     getItem('no-auth', <Link to='/staff/employee'>Nhân viên</Link>, 'staff-employee', '', 'Nhân sự / Nhân viên'),

@@ -7,16 +7,19 @@ import './App.css'
 import AppContext from './contexts/AppContext'
 import locale from 'antd/lib/date-picker/locale/en_US'
 import {
+  LogInPage,
   LayOutPage,
   DashboardPage,
-  OrganizePage,
-  CompanyPage,
-  DepartmentPage,
-  LocationPage,
-  UserOrganizePage,
-  UserCompanyPage,
-  UserOperatePage,
-  LogInPage,
+  
+  HousePage,
+  QuietPage,
+  EnvironmentPage,
+  PowerOutageSchedulePage,
+
+  DeclareTemporaryAbsencePage,
+  DeclarationOfResidencePage,
+  TemporaryRegistrationPage,
+ 
 } from './pages'
 
 function App() {
@@ -49,16 +52,16 @@ function App() {
             <Route element={!isLogin ? <Navigate to='/' replace /> : <LayOutPage />}>
               {/* <Route element={<LayOutPage />}> */}
               <Route path='dashboard' element={<DashboardPage />} />
-              <Route path='category'>
-                <Route path='organize' element={<OrganizePage />} />
-                <Route path='company' element={<CompanyPage />} />
-                <Route path='department' element={<DepartmentPage />} />
-                <Route path='location' element={<LocationPage />} />
+              <Route path='area'>
+                <Route path='house' element={<HousePage />} />
+                <Route path='quiet' element={<QuietPage />} />
+                <Route path='environment' element={<EnvironmentPage />} />
+                <Route path='poweroutageschedule' element={<PowerOutageSchedulePage />} />
               </Route>
-              <Route path='user'>
-                <Route path='organize' element={<UserOrganizePage />} />
-                <Route path='company' element={<UserCompanyPage />} />
-                <Route path='operate' element={<UserOperatePage />} />
+              <Route path='information'>
+                <Route path='declaretemporaryAbsence' element={<DeclareTemporaryAbsencePage />} />
+                <Route path='declarationofResidence' element={<DeclarationOfResidencePage />} />
+                <Route path='temporaryregistration' element={<TemporaryRegistrationPage />} />
               </Route>
             </Route>
             {/* </Route> */}
