@@ -19,11 +19,11 @@ function MapPageDashboard() {
                     >
                         <ViewMore />
 
-                        <div className='font_dasboard'>
+                        {/* <div className='font_dasboard'>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
-                        </div>
+                        </div> */}
                     </Card>
                 </Col>
                 <Col span={8}>
@@ -36,11 +36,11 @@ function MapPageDashboard() {
                         bordered={false}
                         className='custom-card'
                     >
-                        <div className='font_dasboard'>
+                        {/* <div className='font_dasboard'>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
-                        </div>
+                        </div> */}
                         <ViewMore />
                     </Card>
                 </Col>
@@ -54,11 +54,11 @@ function MapPageDashboard() {
                         bordered={false}
                         className='custom-card'
                     >
-                        <div className='font_dasboard'>
+                        {/* <div className='font_dasboard'>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
                             <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
-                        </div>
+                        </div> */}
                         <ViewMore />
                     </Card>
                 </Col>
