@@ -7,7 +7,7 @@ import Config from '../../../../Config.json'
 
 const { dateFormat } = Config
 
-function FitleDeclaretemporaryAbsence(props) {
+function FitleTemporaryregistration(props) {
 
     const { filters: fils, onChange, onAdd } = props
 
@@ -65,17 +65,17 @@ function FitleDeclaretemporaryAbsence(props) {
         </Row>
     )
 }
-FitleDeclaretemporaryAbsence.propTypes = {
+FitleTemporaryregistration.propTypes = {
     filters: PropTypes.object,
     onChange: PropTypes.func,
     onAdd: PropTypes.func,
     departments: PropTypes.array,
 }
 
-FitleDeclaretemporaryAbsence.defaultProps = {
+FitleTemporaryregistration.defaultProps = {
     filters: {},
     onChange: () => { },
     onAdd: () => { },
     departments: [],
 }
-export default FitleDeclaretemporaryAbsence
+export default FitleTemporaryregistration
