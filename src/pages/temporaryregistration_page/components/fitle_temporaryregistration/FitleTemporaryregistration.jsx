@@ -42,20 +42,6 @@ function FitleTemporaryregistration(props) {
                     />
                 </InputGroup>
             </Col>
-            {/* <Col xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
-                <InputGroup before='Ngày sinh'>
-                    <DatePicker
-                        className='w-100'
-                        format={dateFormat}
-                        placeholder='dd/mm/yyyy'
-                        onChange={(date, dateString) => {
-                            const newFillters = { ...filters, AbsenceDate: dateString }
-                            setFilters(newFillters)
-                        }}
-                    />
-                </InputGroup>
-            </Col> */}
-                        
             <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={4}>
                 <Space size='small'>
                     <Button type='primary' icon={<SearchOutlined />} onClick={onSearch} className='min-w-100-px'>Tìm kiếm</Button>
