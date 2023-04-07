@@ -1,20 +1,19 @@
 import { Button, Table, Modal, Input, Space, Form } from 'antd'
 import React, { useState } from 'react'
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons'
-import RowAction from '../../components/row_action/RowAction';
+import RowAction from '../../components/row_action/RowAction'
 function QuietPage() {
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     const showModal = () => {
-        setIsModalOpen(true);
-    };
+        setIsModalOpen(true)
+    }
     const handleOk = () => {
-        setIsModalOpen(false);
-    };
+        setIsModalOpen(false)
+    }
     const handleCancel = () => {
-        setIsModalOpen(false);
-    };
+        setIsModalOpen(false)
+    }
 
     const [isEdit, setEdit] = useState(false)
 
@@ -25,47 +24,47 @@ function QuietPage() {
             id: 1,
             name: 'Duy',
             email: 'Duy@gmail.com',
-            address: 'Bửu Long'
+            address: 'Bửu Long',
         },
         {
             id: 2,
             name: 'Huy',
             email: 'Huy@gmail.com',
-            address: 'Bửu Long'
+            address: 'Bửu Long',
         },
         {
             id: 3,
             name: 'Tuyển',
             email: 'Tuyển@gmail.com',
-            address: 'Bửu Long'
+            address: 'Bửu Long',
         },
         {
             id: 4,
             name: 'Liêm',
             email: 'Liêm@gmail.com',
-            address: 'Bửu Long'
+            address: 'Bửu Long',
         },
     ])
     const columns = [
         {
             key: '1',
             title: 'Id',
-            dataIndex: 'id'
+            dataIndex: 'id',
         },
         {
             key: '2',
             title: 'Họ và tên',
-            dataIndex: 'name'
+            dataIndex: 'name',
         },
         {
             key: '3',
             title: 'email',
-            dataIndex: 'email'
+            dataIndex: 'email',
         },
         {
             key: '4',
             title: 'Địa chỉ',
-            dataIndex: 'address'
+            dataIndex: 'address',
         },
         {
             key: '5',
@@ -79,9 +78,9 @@ function QuietPage() {
                         <RowAction icon={<DeleteOutlined style={{ color: 'red' }} />} title='Xóa' onClick={() => onDeleteOutlined(record)} />
                     </Space>
                 )
-            }
+            },
         },
-    ];
+    ]
     //    xóa
     const onDeleteOutlined = (record) => {
         Modal.confirm({
@@ -90,16 +89,14 @@ function QuietPage() {
             cancelText: 'không',
             onOk: () => {
                 setdataSource((pre) => {
-                    return pre.filter((student) => student.id !== record.id);
-
+                    return pre.filter((student) => student.id !== record.id)
                 })
-            }
+            },
         })
-
     }
     // sửa
     const onEditOutlined = (record) => {
-        setEdit(true);
+        setEdit(true)
         seteditStudent({ ...record })
     }
     const resetEdit = () => {
@@ -109,29 +106,25 @@ function QuietPage() {
     return (
         <div className='HomePage'>
             <header className='HomePage-header'>
-        
                 <>
-                    <Button type="primary" onClick={showModal}> Thêm mới </Button>
-                
-                    <Modal title="Thêm mới" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText='Lưu' cancelText='Hủy'>
-                        <Form.Item
-                            label='Họ và tên'
-                        >
+                    <Button type='primary' onClick={showModal}>
+                        {' '}
+                        Thêm mới{' '}
+                    </Button>
+
+                    <Modal title='Thêm mới' open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText='Lưu' cancelText='Hủy'>
+                        <Form.Item label='Họ và tên'>
                             <Input />
                         </Form.Item>
-                        <Form.Item
-                            label='email'
-                        >
+                        <Form.Item label='email'>
                             <Input />
                         </Form.Item>
-                        <Form.Item
-                            label='Địa chỉ'
-                        >
+                        <Form.Item label='Địa chỉ'>
                             <Input />
                         </Form.Item>
                     </Modal>
                 </>
-                <Table columns={columns} dataSource={dataSource}></Table>
+                <Table columns={columns} dataSource={dataSource} rowKey='id'></Table>
                 <Modal
                     title='Sửa'
                     open={isEdit}
@@ -146,16 +139,14 @@ function QuietPage() {
                                 if (student.id === editStudent.id) {
                                     return editStudent
                                 } else {
-                                    return student;
+                                    return student
                                 }
                             })
                         })
                         resetEdit()
                     }}
                 >
-                    <Form.Item
-                        label='Họ và tên'
-                    >
+                    <Form.Item label='Họ và tên'>
                         <Input
                             value={editStudent?.name}
                             onChange={(e) => {
@@ -165,9 +156,7 @@ function QuietPage() {
                             }}
                         />
                     </Form.Item>
-                    <Form.Item
-                        label='email'
-                    >
+                    <Form.Item label='email'>
                         <Input
                             value={editStudent?.email}
                             onChange={(e) => {
@@ -177,9 +166,7 @@ function QuietPage() {
                             }}
                         />
                     </Form.Item>
-                    <Form.Item
-                        label='Địa chỉ'
-                    >
+                    <Form.Item label='Địa chỉ'>
                         <Input
                             value={editStudent?.address}
                             onChange={(e) => {
@@ -190,7 +177,6 @@ function QuietPage() {
                         />
                     </Form.Item>
                 </Modal>
-                
             </header>
         </div>
     )
