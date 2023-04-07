@@ -1,4 +1,4 @@
-import { PlusOutlined, SearchOutlined } from '@ant-design/icons'
+import { SearchOutlined } from '@ant-design/icons'
 import { Button, Col, Row, Space, Input, DatePicker } from 'antd'
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
@@ -23,46 +23,17 @@ function FitleDeclaretemporaryAbsence(props) {
     return (
         <Row gutter={[12, 12]}>
             <Col xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
-                <InputGroup before='Họ và tên'>
+                {/* <InputGroup before='Product'>
                     <Input
-                        placeholder='Họ và tên người đại diện'
+                        placeholder='Product'
                         onChange={(value) => {
                             setFilters({ ...filters, Key_Search: value.target.value ?? '' })
                         }}
                     />
-                </InputGroup>
-            </Col>
-            <Col xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
-                <InputGroup before='CMND/CCCD'>
-                    <Input
-                        placeholder='CMND/CCCD'
-                        onChange={(value) => {
-                            setFilters({ ...filters, Key_Search: value.target.value ?? '' })
-                        }}
-                    />
-                </InputGroup>
-            </Col>
-            {/* <Col xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
-                <InputGroup before='Ngày sinh'>
-                    <DatePicker
-                        className='w-100'
-                        format={dateFormat}
-                        placeholder='dd/mm/yyyy'
-                        onChange={(date, dateString) => {
-                            const newFillters = { ...filters, AbsenceDate: dateString }
-                            setFilters(newFillters)
-                        }}
-                    />
-                </InputGroup>
-            </Col> */}
-                        
-            <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={4}>
-                <Space size='small'>
-                    <Button type='primary' icon={<SearchOutlined />} onClick={onSearch} className='min-w-100-px'>Tìm kiếm</Button>
-                    <Button type='primary' icon={<PlusOutlined />} onClick={onAdd} className='min-w-100-px'>Thêm mới</Button>
-                </Space>
+                </InputGroup> */}
             </Col>
         </Row>
+
     )
 }
 FitleDeclaretemporaryAbsence.propTypes = {

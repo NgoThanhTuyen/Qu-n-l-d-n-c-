@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FitleDeclaretemporaryAbsence, ModalAdd, TableDeclaretemporaryAbsence } from './components'
+import { FitleDeclaretemporaryAbsence, TableDeclaretemporaryAbsence } from './components'
 import { Card, Space } from 'antd'
 
 function DeclareTemporaryAbsencePage(props) {
@@ -11,8 +11,6 @@ function DeclareTemporaryAbsencePage(props) {
     })
 
     const [organizeTable, setorganizeTable] = useState([])
-
-    const [isLoadingDeclareTemporaryAbsencePage] = useState(true)
 
     return (
         <Space direction='vertical' className='w-100' size='small'>
@@ -35,17 +33,6 @@ function DeclareTemporaryAbsencePage(props) {
                     }}
                 />
             </Card>
-            <ModalAdd
-                isLoading={isLoadingDeclareTemporaryAbsencePage}
-                isShow={isShowModalAdd}
-                onSave={() => {
-                    setIsShowModalAdd(false)
-                    // Reload table
-                    const newFilters = { ...filters, current: 1 }
-                    setFilters(newFilters)
-                }}
-                onCancel={() => setIsShowModalAdd(false)}
-            />
         </Space>
     )
 }
