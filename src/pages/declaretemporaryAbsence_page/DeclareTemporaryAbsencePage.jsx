@@ -1,40 +1,61 @@
-import React, { useState } from 'react'
-import { FitleDeclaretemporaryAbsence, TableDeclaretemporaryAbsence } from './components'
-import { Card, Space } from 'antd'
+// import React, { useState } from 'react'
+// import { FitleDeclaretemporaryAbsence, TableDeclaretemporaryAbsence } from './components'
+// import { Form, Tabs } from 'antd'
 
-function DeclareTemporaryAbsencePage(props) {
 
-    const [isShowModalAdd, setIsShowModalAdd] = useState(false)
+// function DeclareTemporaryAbsencePage(props) {
 
-    const [filters, setFilters] = useState({
-        Key_Search: '',
-    })
+//     const [form] = Form.useForm()
 
-    const [organizeTable, setorganizeTable] = useState([])
+//     const [filters, setFilters] = useState({
+//         Key_Search: '',
+//     })
 
-    return (
-        <Space direction='vertical' className='w-100' size='small'>
-            <Card size='small'>
-                <FitleDeclaretemporaryAbsence
-                    filters={filters}
-                    onAdd={() => setIsShowModalAdd(true)}
-                    onChange={(values) => {
-                        setFilters(values)
-                    }}
-                />
-            </Card>
-            <Card bodyStyle={{ padding: 0 }}>
-                <TableDeclaretemporaryAbsence
-                    data={organizeTable}
-                    // isLoading={isLoadingDeclareTemporaryAbsencePage}
-                    onChange={(pagInfo) => {
-                        const newFilters = { ...filters, PageIndex: pagInfo.current }
-                        setFilters(newFilters)
-                    }}
-                />
-            </Card>
-        </Space>
-    )
-}
+//     const [tabActive, setTabActive] = useState('1')
 
-export default DeclareTemporaryAbsencePage
+//     const tabItems = [
+//         {
+//             label: 'SUMMARY (F1)',
+//             key: '1',
+//             children: (
+//                 <TableDeclaretemporaryAbsence
+//                     filters={filters}
+//                     setFilters={setFilters}
+//                     onChange={(pagInfo) => {
+//                         const newFilters = { ...filters, PageIndex: pagInfo.current }
+//                         setFilters(newFilters)
+//                     }}
+//                 />
+//             ),
+//         },
+//         {
+//             label: 'INPUT (F2)',
+//             key: '2',
+//             children: (
+//                 <FitleDeclaretemporaryAbsence
+//                     onFillData={(record) => {
+//                         form.setFieldsValue(record.Obj_Value)
+//                     }}
+//                 />
+//             ),
+//         },
+//     ]
+//     return (
+//         <>
+//             <Tabs
+//                 tabBarStyle={{ marginBottom: 0, fontWeight: 600 }}
+//                 type='card'
+//                 items={tabItems}
+//                 activeKey={tabActive}
+//                 onChange={(tab) => setTabActive(tab)}
+//                 onTabClick={(tab) => {
+//                     if (tab === '2') {
+//                         form.resetFields()
+//                     }
+//                 }}
+//             />
+//         </>
+//     )
+// }
+
+// export default DeclareTemporaryAbsencePage
