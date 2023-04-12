@@ -472,6 +472,105 @@ strong {
     height: 250px;
 }
 
-.font_dasboard{
+.font_dasboard {
     font-size: 18px;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* khung bọc toàn bộ dashboard */
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* khung bọc toàn bộ dashboard */
+
+
+
+/* Khung bên trái dashboard */
+
+.wrap_top_dashboard {
+
+    justify-content: space-evenly;
+}
+
+.main_top_left_dashboard {
+    display: flex;
+    /* width: 800px; */
+    /* justify-content: space-evenly;s */
+
+}
+
+.item_top_left_dashboard {
+    width: 350px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #ffff;
+}
+
+.item_top_left_dashboard:hover {
+    width: 350px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: 0.2s;
+    box-shadow: 0 0 30px #919191cc;
+    background-color: #ffff;
+}
+
+.name_dashboard {
+    text-align: center;
+    padding-top: 20px;
+}
+
+hr {
+    width: 250px;
+    background-color: #cccc;
+    height: 1px;
+    border: none;
+}
+
+
+/* Khung bên trái dashboard */
+
+
+
+
+/* Khung giữa */
+.item_centert_left_dashboard {
+    width: 1070px;
+    height: 515px;
+    margin: 5px;
+    background-color: #ffff;
+    border-radius: 20px;
+
+}
+
+/* Khung giữa */
+
+
+
+/* khung bên phải  */
+.wrap_top_right_dashboard {
+    margin: 5px;
+}
+
+.item_top_right_dashboard {
+    width: 395px;
+    height: 500px;
+    background-color: #ffff;
+    border-radius: 20px;
+
+}
+
+.item_top_bottom_dashboard {
+    margin-top: 10px;
+    width: 395px;
+    height: 215px;
+    background-color: #ffff;
+    border-radius: 20px;
+
+}
+
+/* khung bên phải  */

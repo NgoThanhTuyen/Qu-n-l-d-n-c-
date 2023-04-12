@@ -1,68 +1,39 @@
 import React from 'react'
-import { Card, Col, Row } from 'antd'
-import { HomeTwoTone } from '@ant-design/icons'
-import ViewMore from '../view_more/ViewMore'
+// import ChartPage from '../chart_page/ChartPage'
 
 function MapPageDashboard() {
     return (
-        <div>
-            <Row gutter={25}>
-                <Col span={8}>
-                    <Card
-                        title={
-                            <>
-                                <HomeTwoTone style={{ fontSize: '20px', marginRight: '10px' }} /> <span style={{ fontSize: '20px' }}>Khu vực Trảng Bom</span>
-                            </>
-                        }
-                        bordered={false}
-                        className='custom-card'
-                    >
-                        <ViewMore />
+        <div className='main'>
+            <div className='wrap_top_dashboard'>
+                <div className='main_top_left_dashboard'>
+                    <div className='item_top_left_dashboard'>
+                        <h1 className='name_dashboard'>KHU VỰC TRẢNG BOM</h1>
+                        <hr />
+                    </div>
+                    <div className='item_top_left_dashboard'>
+                        <h1 className='name_dashboard'>KHU VỰC BỮU LONG</h1>
+                        <hr />
+                    </div>
+                    <div className='item_top_left_dashboard'>
+                        <h1 className='name_dashboard'>KHU VỰC SÔNG MÂY</h1>
+                        <hr />
+                    </div>
 
-                        {/* <div className='font_dasboard'>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
-                        </div> */}
-                    </Card>
-                </Col>
-                <Col span={8}>
-                    <Card
-                        title={
-                            <>
-                                <HomeTwoTone style={{ fontSize: '20px', marginRight: '10px' }} /> <span style={{ fontSize: '20px' }}>Khu vực Biên Hòa </span>
-                            </>
-                        }
-                        bordered={false}
-                        className='custom-card'
-                    >
-                        {/* <div className='font_dasboard'>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
-                        </div> */}
-                        <ViewMore />
-                    </Card>
-                </Col>
-                <Col span={8}>
-                    <Card
-                        title={
-                            <>
-                                <HomeTwoTone style={{ fontSize: '20px', marginRight: '10px' }} /> <span style={{ fontSize: '20px' }}>Khu vực Sông Mây</span>
-                            </>
-                        }
-                        bordered={false}
-                        className='custom-card'
-                    >
-                        {/* <div className='font_dasboard'>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở : </h1>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà </h1>
-                            <h1 style={{ color: '#52c41a' }}> khu vực nhà ở </h1>
-                        </div> */}
-                        <ViewMore />
-                    </Card>
-                </Col>
-            </Row>
+                </div>
+                <div className='main_top_center_dashboard'>
+                    <div className='item_centert_left_dashboard'>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div className='wrap_top_right_dashboard'>
+                <div className='item_top_right_dashboard'></div>
+                <div className='item_top_bottom_dashboard'></div>
+            </div>
         </div>
     )
 }
