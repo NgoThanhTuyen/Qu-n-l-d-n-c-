@@ -76,24 +76,24 @@ const ChartWorkerDepartment = () => {
             DepartmentName: 'Table',
             data: 57,
         },
-        {
-            name: 'Total People',
-            	DepartmentName: 'Mkbls Top Star',
-            data: 26,
-        },
         // {
         //     name: 'Total People',
-        //     	DepartmentName: 'Recut Mkbls Top Star',
+        //     DepartmentName: 'Mkbls Top Star',
+        //     data: 26,
+        // },
+        // {
+        //     name: 'Total People',
+        //     DepartmentName: 'Recut Mkbls Top Star',
         //     data: 21,
         // },
         // {
         //     name: 'Total People',
-        //     	DepartmentName: 'Recut Top Star',
+        //     DepartmentName: 'Recut Top Star',
         //     data: 23,
         // },
         // {
         //     name: 'Total People',
-        //     	DepartmentName: 'Top Star',
+        //     DepartmentName: 'Top Star',
         //     data: 80,
         // },
     ]

@@ -73,7 +73,7 @@ const ChartAbsence = () => {
         },
         {
             name: 'Time AB(min)',
-            	DepartmentName: 'Table',
+            DepartmentName: 'Table',
             data: 150,
         },
         // {
@@ -169,7 +169,7 @@ const ChartAbsence = () => {
         },
         {
             name: 'AL',
-            	DepartmentName: 'Table',
+            DepartmentName: 'Table',
             data: 70,
         },
         // {
@@ -264,7 +264,7 @@ const ChartAbsence = () => {
         },
         {
             name: 'PL',
-            	DepartmentName: 'Table',
+            DepartmentName: 'Table',
             data: 30,
         },
         // {
@@ -359,7 +359,7 @@ const ChartAbsence = () => {
         },
         {
             name: 'SL',
-            	DepartmentName: 'Table',
+            DepartmentName: 'Table',
             data: 20,
         },
         // {
@@ -454,7 +454,7 @@ const ChartAbsence = () => {
         },
         {
             name: 'Late + Leave Soon',
-            	DepartmentName: 'Table',
+            DepartmentName: 'Table',
             data: 30,
         },
         // {
@@ -491,6 +491,7 @@ const ChartAbsence = () => {
         label: {
             position: 'top',
         },
+    
     }
     return <Column {...config} />
 }
