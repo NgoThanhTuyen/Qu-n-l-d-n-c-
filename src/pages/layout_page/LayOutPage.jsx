@@ -1,12 +1,13 @@
 import React, { useContext, useState } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
-import { DashboardOutlined, MenuFoldOutlined, MenuUnfoldOutlined, TagsOutlined, ToolOutlined, UserOutlined, UnlockOutlined } from '@ant-design/icons'
+import { DashboardOutlined, MenuFoldOutlined, MenuUnfoldOutlined, TagsOutlined, UserOutlined, UnlockOutlined } from '@ant-design/icons'
 import { Layout, Menu, Space } from 'antd'
 import AppContext from '../../contexts/AppContext'
 const { Header, Content, Sider } = Layout
 
 const menuItems = [
     getItem('dashboard-chart-view,dashboard-report-export,dashboard-report-view', <Link to='/dashboard'>Tổng quan</Link>, 'dashboard', <DashboardOutlined />, 'Tổng quan'),
+    getItem('dashboard1-chart-view,dashboard1-report-export,dashboard1-report-view', <Link to='/dashboard1'>Tổng quan1</Link>, 'dashboard1', <DashboardOutlined />, 'Tổng quan1'),
     getItem('area-house-view,area-quiet-view,area-poweroutageschedule-view,area-environment-view', 'Khu vực trảng bom', 'area', <TagsOutlined />, '', [
         getItem('area-house-view', <Link to='/area/house'>Quản lý nhà ở</Link>, 'area-house', '', 'Khu vực trảng bom / Quản lý nhà ở'),
         getItem('area-quiet-view', <Link to='/area/quiet'>Quản lý trật tự</Link>, 'area-quiet', '', 'Khu vực trảng bom / Quản lý trật tự'),
@@ -14,9 +15,27 @@ const menuItems = [
         getItem('area-poweroutageschedule-view', <Link to='/area/poweroutageschedule'>Quản lý lịch cúp điện</Link>, 'area-poweroutageschedule', '', 'Khu vực trảng bom / Quản lý lịch cúp điện'),
     ]),
     getItem('information-declaretemporaryAbsence-view,information-declarationofResidence-view,information-temporaryregistration-view', 'Thông tin công dân', 'information', <UnlockOutlined />, '', [
-        getItem('information-declaretemporaryAbsence-view', <Link to='/information/declaretemporaryAbsence'>Khai báo tạm vắng</Link>, 'usinformationer-declaretemporaryAbsence', '', 'Thông tin công dân / Khai báo tạm vắng'),
-        getItem('information-declarationofResidence-view', <Link to='/information/declarationofResidence'>Khai báo lưu trú</Link>, 'information-declarationofResidence', '', 'Thông tin công dân / Khai báo lưu trú'),
-        getItem('information-temporaryregistration-view', <Link to='/information/temporaryregistration'>Đăng ký tạm trú</Link>, 'information-temporaryregistration', '', 'Thông tin công dân / Đăng ký tạm trú'),
+        getItem(
+            'information-declaretemporaryAbsence-view',
+            <Link to='/information/declaretemporaryAbsence'>Khai báo tạm vắng</Link>,
+            'usinformationer-declaretemporaryAbsence',
+            '',
+            'Thông tin công dân / Khai báo tạm vắng'
+        ),
+        getItem(
+            'information-declarationofResidence-view',
+            <Link to='/information/declarationofResidence'>Khai báo lưu trú</Link>,
+            'information-declarationofResidence',
+            '',
+            'Thông tin công dân / Khai báo lưu trú'
+        ),
+        getItem(
+            'information-temporaryregistration-view',
+            <Link to='/information/temporaryregistration'>Đăng ký tạm trú</Link>,
+            'information-temporaryregistration',
+            '',
+            'Thông tin công dân / Đăng ký tạm trú'
+        ),
     ]),
     // getItem('no-auth', 'Nhân sự', 'staff', <UserOutlined />, '', [
     //     getItem('no-auth', <Link to='/staff/employee'>Nhân viên</Link>, 'staff-employee', '', 'Nhân sự / Nhân viên'),
@@ -40,7 +59,7 @@ function LayoutPage(props) {
     const appSettings = useContext(AppContext)
     const location = useLocation()
     const [collapsed, setCollapsed] = useState(false)
-    const [ setIsShowModalProfile] = useState(false)
+    const [setIsShowModalProfile] = useState(false)
 
     const defaultOpenKeys = () => {
         const pathName = location.pathname

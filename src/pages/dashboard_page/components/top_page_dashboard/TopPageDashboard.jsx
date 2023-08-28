@@ -1,41 +1,11 @@
+import { Radio } from 'antd'
 import React from 'react'
-// import ChartPage from '../chart_page/ChartPage'
-
-function MapPageDashboard() {
-    return (
-        <div className='main'>
-            <div className='wrap_top_dashboard'>
-                <div className='main_top_left_dashboard'>
-                    <div className='item_top_left_dashboard'>
-                        <h1 className='name_dashboard'>KHU VỰC TRẢNG BOM</h1>
-                        <hr />
-                    </div>
-                    <div className='item_top_left_dashboard'>
-                        <h1 className='name_dashboard'>KHU VỰC BỮU LONG</h1>
-                        <hr />
-                    </div>
-                    <div className='item_top_left_dashboard'>
-                        <h1 className='name_dashboard'>KHU VỰC SÔNG MÂY</h1>
-                        <hr />
-                    </div>
-
-                </div>
-                <div className='main_top_center_dashboard'>
-                    <div className='item_centert_left_dashboard'>
-
-
-                    </div>
-
-
-                </div>
-
-            </div>
-            <div className='wrap_top_right_dashboard'>
-                <div className='item_top_right_dashboard'></div>
-                <div className='item_top_bottom_dashboard'></div>
-            </div>
-        </div>
-    )
-}
-
-export default MapPageDashboard
+const TopPageDashboard = () => (
+    <>
+        <Radio.Group defaultValue='a' buttonStyle='solid' style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            <Radio.Button value='a'>Production overview</Radio.Button>
+            <Radio.Button value='b'>Personnel overview</Radio.Button>
+        </Radio.Group>
+    </>
+)
+export default TopPageDashboard
