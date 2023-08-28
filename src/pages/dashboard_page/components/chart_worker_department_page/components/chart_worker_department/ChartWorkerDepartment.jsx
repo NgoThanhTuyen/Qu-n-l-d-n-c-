@@ -76,11 +76,11 @@ const ChartWorkerDepartment = () => {
             DepartmentName: 'Table',
             data: 57,
         },
-        // {
-        //     name: 'Total People',
-        //     	DepartmentName: 'Mkbls Top Star',
-        //     data: 26,
-        // },
+        {
+            name: 'Total People',
+            	DepartmentName: 'Mkbls Top Star',
+            data: 26,
+        },
         // {
         //     name: 'Total People',
         //     	DepartmentName: 'Recut Mkbls Top Star',
@@ -106,7 +106,7 @@ const ChartWorkerDepartment = () => {
             position: 'bottom',
         },
         label: {
-            position: 'top',
+            position: 'middle',
         },
     }
     return <Column {...config} />

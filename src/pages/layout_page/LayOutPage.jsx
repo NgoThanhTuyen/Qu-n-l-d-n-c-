@@ -6,8 +6,8 @@ import AppContext from '../../contexts/AppContext'
 const { Header, Content, Sider } = Layout
 
 const menuItems = [
-    getItem('dashboard-chart-view,dashboard-report-export,dashboard-report-view', <Link to='/dashboard'>Tổng quan</Link>, 'dashboard', <DashboardOutlined />, 'Tổng quan'),
-    getItem('dashboard1-chart-view,dashboard1-report-export,dashboard1-report-view', <Link to='/dashboard1'>Tổng quan1</Link>, 'dashboard1', <DashboardOutlined />, 'Tổng quan1'),
+    getItem('dashboard-chart-view,dashboard-report-export,dashboard-report-view', <Link to='/dashboard'>Production overview</Link>, 'dashboard', <DashboardOutlined />, 'Tổng quan'),
+    getItem('dashboard1-chart-view,dashboard1-report-export,dashboard1-report-view', <Link to='/dashboard1'>Personnel overview</Link>, 'dashboard1', <DashboardOutlined />, 'Tổng quan1'),
     getItem('area-house-view,area-quiet-view,area-poweroutageschedule-view,area-environment-view', 'Khu vực trảng bom', 'area', <TagsOutlined />, '', [
         getItem('area-house-view', <Link to='/area/house'>Quản lý nhà ở</Link>, 'area-house', '', 'Khu vực trảng bom / Quản lý nhà ở'),
         getItem('area-quiet-view', <Link to='/area/quiet'>Quản lý trật tự</Link>, 'area-quiet', '', 'Khu vực trảng bom / Quản lý trật tự'),

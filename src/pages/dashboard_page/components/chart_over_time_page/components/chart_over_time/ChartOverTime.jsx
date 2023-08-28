@@ -71,11 +71,11 @@ const ChartOverTime = () => {
             DepartmentName: 'Recut Table',
             data: 140,
         },
-        // {
-        //     name: 'Normal Night',
-        //     	DepartmentName: 'Table',
-        //     data: 188,
-        // },
+        {
+            name: 'Normal Night',
+            	DepartmentName: 'Table',
+            data: 188,
+        },
         // {
         //     name: 'Normal Night',
         //     	DepartmentName: 'Mkbls Top Star',
@@ -167,11 +167,11 @@ const ChartOverTime = () => {
             DepartmentName: 'Recut Table',
             data: 10,
         },
-        // {
-        //     name: 'Day Off Night',
-        //     	DepartmentName: 'Table',
-        //     data: 50,
-        // },
+        {
+            name: 'Day Off Night',
+            	DepartmentName: 'Table',
+            data: 50,
+        },
         // {
         //     name: 'Day Off Night',
         //     	DepartmentName: 'Mkbls Top Star',
@@ -262,11 +262,11 @@ const ChartOverTime = () => {
             DepartmentName: 'Recut Table',
             data: 50,
         },
-        // {
-        //     name: 'OT Holidays',
-        //     	DepartmentName: 'Table',
-        //     data: 30,
-        // },
+        {
+            name: 'OT Holidays',
+            	DepartmentName: 'Table',
+            data: 30,
+        },
         // {
         //     name: 'OT Holidays',
         //     	DepartmentName: 'Mkbls Top Star',
@@ -547,11 +547,11 @@ const ChartOverTime = () => {
             DepartmentName: 'Recut Table',
             data: 30,
         },
-        // {
-        //     name: 'OT Off',
-        //     	DepartmentName: 'Table',
-        //     data: 40,
-        // },
+        {
+            name: 'OT Off',
+            	DepartmentName: 'Table',
+            data: 40,
+        },
         // {
         //     name: 'OT Off',
         //     	DepartmentName: 'Mkbls Top Star',

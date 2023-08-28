@@ -71,11 +71,11 @@ const ChartAbsence = () => {
             DepartmentName: 'Recut Table',
             data: 120,
         },
-        // {
-        //     name: 'Time AB(min)',
-        //     	DepartmentName: 'Table',
-        //     data: 150,
-        // },
+        {
+            name: 'Time AB(min)',
+            	DepartmentName: 'Table',
+            data: 150,
+        },
         // {
         //     name: 'Time AB(min)',
         //     	DepartmentName: 'Mkbls Top Star',
@@ -167,11 +167,11 @@ const ChartAbsence = () => {
             DepartmentName: 'Recut Table',
             data: 50,
         },
-        // {
-        //     name: 'AL',
-        //     	DepartmentName: 'Table',
-        //     data: 70,
-        // },
+        {
+            name: 'AL',
+            	DepartmentName: 'Table',
+            data: 70,
+        },
         // {
         //     name: 'AL',
         //     	DepartmentName: 'Mkbls Top Star',
@@ -262,11 +262,11 @@ const ChartAbsence = () => {
             DepartmentName: 'Recut Table',
             data: 30,
         },
-        // {
-        //     name: 'PL',
-        //     	DepartmentName: 'Table',
-        //     data: 30,
-        // },
+        {
+            name: 'PL',
+            	DepartmentName: 'Table',
+            data: 30,
+        },
         // {
         //     name: 'PL',
         //     	DepartmentName: 'Mkbls Top Star',
@@ -357,11 +357,11 @@ const ChartAbsence = () => {
             DepartmentName: 'Recut Table',
             data: 30,
         },
-        // {
-        //     name: 'SL',
-        //     	DepartmentName: 'Table',
-        //     data: 20,
-        // },
+        {
+            name: 'SL',
+            	DepartmentName: 'Table',
+            data: 20,
+        },
         // {
         //     name: 'SL',
         //     	DepartmentName: 'Mkbls Top Star',
@@ -452,11 +452,11 @@ const ChartAbsence = () => {
             DepartmentName: 'Recut Table',
             data: 10,
         },
-        // {
-        //     name: 'Late + Leave Soon',
-        //     	DepartmentName: 'Table',
-        //     data: 30,
-        // },
+        {
+            name: 'Late + Leave Soon',
+            	DepartmentName: 'Table',
+            data: 30,
+        },
         // {
         //     name: 'Late + Leave Soon',
         //     	DepartmentName: 'Mkbls Top Star',
