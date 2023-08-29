@@ -3,7 +3,6 @@ import LayOutPage from './layout_page/LayOutPage'
 import LogInPage from './login_page/LogInPage'
 
 import DashboardPage from './dashboard_page/DashboardPage'
-import Dashboard1Page from './dashboard1_page/Dashboard1Page'
 
 import HousePage from './house_page/HousePage'
 import QuietPage from './quiet_page/QuietPage'
@@ -16,7 +15,6 @@ import DeclarationOfResidencePage from './declarationofResidence_page/Declaratio
 
 export {
     LayOutPage,
-    Dashboard1Page,
     LogInPage,
     DashboardPage,
     HousePage,

@@ -10,7 +10,6 @@ import {
     LogInPage,
     LayOutPage,
     DashboardPage,
-    Dashboard1Page,
     HousePage,
     QuietPage,
     EnvironmentPage,
@@ -50,7 +49,6 @@ function App() {
                         {/* <Route element={!isLogin ? <Navigate to='/' replace /> : <LayOutPage />}> */}
                         <Route element={<LayOutPage />}>
                             <Route path='dashboard' element={<DashboardPage />} />
-                            <Route path='dashboard1' element={<Dashboard1Page />} />
                             <Route path='area'>
                                 <Route path='house' element={<HousePage />} />
                                 <Route path='quiet' element={<QuietPage />} />

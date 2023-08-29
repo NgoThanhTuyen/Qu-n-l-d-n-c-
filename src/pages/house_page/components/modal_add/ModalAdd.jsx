@@ -1,21 +1,17 @@
 import { CloseOutlined, SaveOutlined } from '@ant-design/icons'
-import { Button, Checkbox, Col, DatePicker, Form, Input, InputNumber, Modal, Row, Select } from 'antd'
+import { Button, Col, DatePicker, Form, Input, Modal, Row } from 'antd'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 import Config from '../../../../Config.json'
 
-const { reqInputMsg, maxMsg, reqSelectMsg, dateFormat } = Config
-
-const { Option } = Select
+const { reqSelectMsg, dateFormat } = Config
 
 function ModalAdd(props) {
-    const { onCancel, isShow, leaveTypes, classifies } = props
+    const { onCancel, isShow } = props
 
     const [form] = Form.useForm()
 
     const [isBusy] = useState(false)
-
-    const [filterClassifies, setFilterClassifies] = useState([])
 
     return (
         <Modal
@@ -33,14 +29,10 @@ function ModalAdd(props) {
             destroyOnClose={true}
             afterClose={() => {
                 form.resetFields()
-                setFilterClassifies([])
             }}
             maskClosable={false}
         >
-            <Form
-                form={form}
-                layout='vertical'
-            >
+            <Form form={form} layout='vertical'>
                 <Row gutter={[24, 24]}>
                     <Col span={12}>
                         <Form.Item
@@ -68,7 +60,6 @@ function ModalAdd(props) {
                     </Col>
 
                     <Col span={12}>
-
                         <Form.Item
                             label='Ngày sinh'
                             name='2'
@@ -173,8 +164,8 @@ ModalAdd.propTypes = {
 
 ModalAdd.defaultProps = {
     isShow: false,
-    onSave: () => { },
-    onCancel: () => { },
+    onSave: () => {},
+    onCancel: () => {},
     leaveTypes: [],
     classifies: [],
 }
