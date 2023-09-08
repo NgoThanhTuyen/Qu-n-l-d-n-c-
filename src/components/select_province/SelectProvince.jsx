@@ -1,33 +1,42 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import { Select } from 'antd'
-import apiUtil from '../../utils/apiUtil'
+// import apiUtil from '../../utils/apiUtil'
 
-const { Option } = Select
+// const { Option } = Select
 
 function SelectProvince(props) {
-    const [data, setData] = useState([])
-    const [isBusy, setIsBusy] = useState(true)
+    // const [data, setData] = useState([])
+    // const [isBusy, setIsBusy] = useState(true)
 
-    useEffect(() => {
-        apiUtil.auth
-            .query({ name: 'PROVINCE_SELECT_ALL' })
-            .then((data) => {
-                setData(data.Result)
-            })
-            .finally(() => {
-                setIsBusy(false)
-            })
-    }, [])
+    // useEffect(() => {
+    //     apiUtil.auth
+    //         .query({ name: 'PROVINCE_SELECT_ALL' })
+    //         .then((data) => {
+    //             setData(data.Result)
+    //         })
+    //         .finally(() => {
+    //             setIsBusy(false)
+    //         })
+    // }, [])
 
-    const options = data.map((d) => (
-        <Option value={d.PROVINCE_ID} key={d.PROVINCE_ID} label={d.PROVINCE_CODE + d.PROVINCE_NAME}>
-            {d.PROVINCE_CODE} - {d.PROVINCE_NAME}
-        </Option>
-    ))
+    // const options = data.map((d) => (
+    //     <Option value={d.PROVINCE_ID} key={d.PROVINCE_ID} label={d.PROVINCE_CODE + d.PROVINCE_NAME}>
+    //         {d.PROVINCE_CODE} - {d.PROVINCE_NAME}
+    //     </Option>
+    // ))
 
     return (
-        <Select placeholder='Chọn tỉnh thành...' allowClear showSearch showArrow filterOption={(input, option) => (option?.label ?? '').toLowerCase().includes(input.toLowerCase())} className='w-100' loading={isBusy} {...props}>
-            {options}
+        <Select
+            placeholder='Chọn tỉnh thành...'
+            allowClear
+            showSearch
+            showArrow
+            filterOption={(input, option) => (option?.label ?? '').toLowerCase().includes(input.toLowerCase())}
+            className='w-100'
+            // loading={isBusy}
+            {...props}
+        >
+            {/* {options} */}
         </Select>
     )
 }

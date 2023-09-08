@@ -35,7 +35,7 @@ const northEast = [8.374561985472765, 104.45800781250001]
 const bounds = [southWest, northEast]
 
 function MapView(props) {
-    const { lat, lng, height = 230, width = '100%', isEdit = false, isAllowOperateMap = false, onEdit } = props
+    const { lat, lng, height = 100, width = '100%', isEdit = false, isAllowOperateMap = false, onEdit } = props
     const [coordinates, setCoordinates] = useState(null)
     const [map, setMap] = useState(null)
 

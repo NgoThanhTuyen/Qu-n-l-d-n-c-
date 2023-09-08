@@ -1,4 +1,4 @@
-import { DashboardOutlined, MenuFoldOutlined, MenuUnfoldOutlined, TagsOutlined, UnlockOutlined, UserOutlined } from '@ant-design/icons'
+import { DashboardOutlined, MenuFoldOutlined, MenuUnfoldOutlined, TagsOutlined, UserOutlined } from '@ant-design/icons'
 import { Layout, Menu, Space } from 'antd'
 import React, { useContext, useState } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
@@ -7,47 +7,18 @@ const { Header, Content, Sider } = Layout
 
 const menuItems = [
     getItem('dashboard-chart-view,dashboard-report-export,dashboard-report-view', <Link to='/dashboard'>DashboardPage</Link>, 'dashboard', <DashboardOutlined />, 'Tổng quan'),
-    getItem('area-house-view,area-quiet-view,area-poweroutageschedule-view,area-environment-view', 'Khu vực trảng bom', 'area', <TagsOutlined />, '', [
-        getItem('area-house-view', <Link to='/area/house'>Quản lý nhà ở</Link>, 'area-house', '', 'Khu vực trảng bom / Quản lý nhà ở'),
-        getItem('area-quiet-view', <Link to='/area/quiet'>Quản lý trật tự</Link>, 'area-quiet', '', 'Khu vực trảng bom / Quản lý trật tự'),
-        getItem('area-environment-view', <Link to='/area/environment'>Quản lý môi trường</Link>, 'area-environment', '', 'Khu vực trảng bom / Quản lý môi trường'),
-        getItem('area-poweroutageschedule-view', <Link to='/area/poweroutageschedule'>Quản lý lịch cúp điện</Link>, 'area-poweroutageschedule', '', 'Khu vực trảng bom / Quản lý lịch cúp điện'),
-    ]),
-    getItem('information-declaretemporaryAbsence-view,information-declarationofResidence-view,information-temporaryregistration-view', 'Thông tin công dân', 'information', <UnlockOutlined />, '', [
+    getItem('catalog-store-view,catalog-quiet-view,catalog-poweroutageschedule-view,catalog-environment-view', 'Danh mục', 'catalog', <TagsOutlined />, '', [
+        getItem('catalog-store-view', <Link to='/catalog/store'>Cửa hàng</Link>, 'catalog-store', '', 'Khu vực trảng bom / Cửa hàng'),
+        getItem('catalog-quiet-view', <Link to='/catalog/quiet'>Quản lý trật tự</Link>, 'catalog-quiet', '', 'Khu vực trảng bom / Quản lý trật tự'),
+        getItem('catalog-environment-view', <Link to='/catalog/environment'>Quản lý môi trường</Link>, 'catalog-environment', '', 'Khu vực trảng bom / Quản lý môi trường'),
         getItem(
-            'information-declaretemporaryAbsence-view',
-            <Link to='/information/declaretemporaryAbsence'>Khai báo tạm vắng</Link>,
-            'usinformationer-declaretemporaryAbsence',
+            'catalog-poweroutageschedule-view',
+            <Link to='/catalog/poweroutageschedule'>Quản lý lịch cúp điện</Link>,
+            'catalog-poweroutageschedule',
             '',
-            'Thông tin công dân / Khai báo tạm vắng'
-        ),
-        getItem(
-            'information-declarationofResidence-view',
-            <Link to='/information/declarationofResidence'>Khai báo lưu trú</Link>,
-            'information-declarationofResidence',
-            '',
-            'Thông tin công dân / Khai báo lưu trú'
-        ),
-        getItem(
-            'information-temporaryregistration-view',
-            <Link to='/information/temporaryregistration'>Đăng ký tạm trú</Link>,
-            'information-temporaryregistration',
-            '',
-            'Thông tin công dân / Đăng ký tạm trú'
+            'Khu vực trảng bom / Quản lý lịch cúp điện'
         ),
     ]),
-    // getItem('no-auth', 'Nhân sự', 'staff', <UserOutlined />, '', [
-    //     getItem('no-auth', <Link to='/staff/employee'>Nhân viên</Link>, 'staff-employee', '', 'Nhân sự / Nhân viên'),
-    //     getItem('no-auth', <Link to='/staff/calendar'>Lịch làm việc</Link>, 'staff-calendar', '', 'Nhân sự / Lịch làm việc'),
-    //     getItem('no-auth', <Link to='/staff/shift'>Ca làm việc</Link>, 'staff-shift', '', 'Nhân sự / Ca làm việc'),
-    //     getItem('no-auth', <Link to='/staff/report'>Báo cáo</Link>, 'staff-report', '', 'Nhân sự / Báo cáo'),
-    // ]),
-    // getItem('no-auth', 'Hệ thống', 'system', <ToolOutlined />, '', [
-    //     getItem('system-role-view', <Link to='/system/role'>Quyền</Link>, 'system-role', '', 'Hệ thống / Quyền'),
-    //     getItem('system-config-view', <Link to='/system/config'>Cấu hình</Link>, 'system-config', '', 'Hệ thống / Cấu hình'),
-    //     getItem('system-log-view', <Link to='/system/log'>Log</Link>, 'system-log', '', 'Hệ thống / Log'),
-    //     getItem('no-auth', <Link to='/system/version'>Phiên bản</Link>, 'system-version', '', 'Hệ thống / Phiên bản'),
-    // ]),
 ]
 
 function getItem(right, label, key, icon, title, children, type) {

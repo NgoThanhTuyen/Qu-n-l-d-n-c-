@@ -10,7 +10,7 @@ import {
     LogInPage,
     LayOutPage,
     DashboardPage,
-    HousePage,
+    StorePage,
     QuietPage,
     EnvironmentPage,
     PowerOutageSchedulePage,
@@ -48,8 +48,8 @@ function App() {
                         <Route index element={<LogInPage />} />
                         <Route element={<LayOutPage />}>
                             <Route path='dashboard' element={<DashboardPage />} />
-                            <Route path='area'>
-                                <Route path='house' element={<HousePage />} />
+                            <Route path='catalog'>
+                                <Route path='store' element={<StorePage />} />
                                 <Route path='quiet' element={<QuietPage />} />
                                 <Route path='environment' element={<EnvironmentPage />} />
                                 <Route path='poweroutageschedule' element={<PowerOutageSchedulePage />} />
