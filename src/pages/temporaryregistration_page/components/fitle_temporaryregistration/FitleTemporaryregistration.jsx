@@ -1,14 +1,10 @@
 import { PlusOutlined, SearchOutlined } from '@ant-design/icons'
-import { Button, Col, Row, Space, Input, DatePicker } from 'antd'
+import { Button, Col, Row, Space, Input } from 'antd'
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import { InputGroup } from '../../../../components'
-import Config from '../../../../Config.json'
-
-const { dateFormat } = Config
 
 function FitleTemporaryregistration(props) {
-
     const { filters: fils, onChange, onAdd } = props
 
     const [filters, setFilters] = useState({
@@ -44,8 +40,12 @@ function FitleTemporaryregistration(props) {
             </Col>
             <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={4}>
                 <Space size='small'>
-                    <Button type='primary' icon={<SearchOutlined />} onClick={onSearch} className='min-w-100-px'>Tìm kiếm</Button>
-                    <Button type='primary' icon={<PlusOutlined />} onClick={onAdd} className='min-w-100-px'>Thêm mới</Button>
+                    <Button type='primary' icon={<SearchOutlined />} onClick={onSearch} className='min-w-100-px'>
+                        Tìm kiếm
+                    </Button>
+                    <Button type='primary' icon={<PlusOutlined />} onClick={onAdd} className='min-w-100-px'>
+                        Thêm mới
+                    </Button>
                 </Space>
             </Col>
         </Row>
@@ -60,8 +60,8 @@ FitleTemporaryregistration.propTypes = {
 
 FitleTemporaryregistration.defaultProps = {
     filters: {},
-    onChange: () => { },
-    onAdd: () => { },
+    onChange: () => {},
+    onAdd: () => {},
     departments: [],
 }
 export default FitleTemporaryregistration

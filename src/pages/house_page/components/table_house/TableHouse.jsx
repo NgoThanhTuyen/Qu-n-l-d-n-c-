@@ -1,37 +1,34 @@
-import { DeleteOutlined, EditOutlined } from '@ant-design/icons'
-import { Popconfirm, Space, Table, Tag } from 'antd'
+import { Table } from 'antd'
 import PropTypes from 'prop-types'
-import { RowAction } from '../../../../components'
 
 function TableHouse(props) {
-
-    const { data, isLoading, onChange, onEdit, onDelete } = props
+    const { data, isLoading, onChange } = props
 
     const columns = [
         {
             key: '1',
             title: 'Họ và tên người đại diện',
-            dataIndex: 'name'
+            dataIndex: 'name',
         },
         {
             key: '2',
             title: 'CMND/CCCD',
-            dataIndex: 'CMND/CCCD'
+            dataIndex: 'CMND/CCCD',
         },
         {
             key: '3',
             title: 'Số điện thoại',
-            dataIndex: 'Số điện thoại'
-        }, 
+            dataIndex: 'Số điện thoại',
+        },
         {
             key: '4',
             title: 'Địa chỉ nhà',
-            dataIndex: 'Địa chỉ nhà'
+            dataIndex: 'Địa chỉ nhà',
         },
-         {
+        {
             key: '5',
             title: 'Thao tác',
-            dataIndex: 'Thao tác'
+            dataIndex: 'Thao tác',
         },
     ]
 
@@ -49,9 +46,9 @@ TableHouse.propTypes = {
 TableHouse.defaultProps = {
     data: null,
     isLoading: false,
-    onChange: () => { },
-    onEdit: () => { },
-    onDelete: () => { },
+    onChange: () => {},
+    onEdit: () => {},
+    onDelete: () => {},
 }
 
 export default TableHouse

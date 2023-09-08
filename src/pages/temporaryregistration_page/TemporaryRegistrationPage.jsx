@@ -3,14 +3,11 @@ import { FitleTemporaryregistration, ModalAdd, TableTemporaryregistration } from
 import { Card, Space } from 'antd'
 
 function TemporaryRegistrationPage(props) {
-
     const [isShowModalAdd, setIsShowModalAdd] = useState(false)
 
     const [filters, setFilters] = useState({
         Key_Search: '',
     })
-
-    const [organizeTable, setorganizeTable] = useState([])
 
     const [isLoadingTemporaryRegistrationPage] = useState(true)
 
@@ -27,7 +24,6 @@ function TemporaryRegistrationPage(props) {
             </Card>
             <Card bodyStyle={{ padding: 0 }}>
                 <TableTemporaryregistration
-                    data={organizeTable}
                     // isLoading={isLoadingTemporaryRegistrationPage}
                     onChange={(pagInfo) => {
                         const newFilters = { ...filters, PageIndex: pagInfo.current }

@@ -3,14 +3,11 @@ import { FitleHouse, ModalAdd, TableHouse } from './components'
 import { Card, Space } from 'antd'
 
 function HousePage(props) {
-
     const [isShowModalAdd, setIsShowModalAdd] = useState(false)
 
     const [filters, setFilters] = useState({
         Key_Search: '',
     })
-
-    const [organizeTable, setorganizeTable] = useState([])
 
     const [isLoadingHousePage] = useState(true)
 
@@ -27,7 +24,6 @@ function HousePage(props) {
             </Card>
             <Card bodyStyle={{ padding: 0 }}>
                 <TableHouse
-                    data={organizeTable}
                     // isLoading={isLoadingHousePage}
                     onChange={(pagInfo) => {
                         const newFilters = { ...filters, PageIndex: pagInfo.current }

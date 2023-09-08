@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function InputGroup(props) {
-    const { before, after, children } = props
+    const { textBefore, textAfter, children } = props
 
-    const isBefore = () => before !== '' && before !== undefined 
+    const isBefore = () => textBefore !== '' && textBefore !== undefined 
 
-    const isAfter = () => after !== '' || after !== undefined
+    const isAfter = () => textAfter !== '' || textAfter !== undefined
 
     const renderClass = () => {
         let className = 'ant-input-group-wrapper'
@@ -20,13 +20,13 @@ function InputGroup(props) {
     }
 
     const renderBefore = () => {
-        if (before === '' || before === undefined) return ''
-        else return <span className='ant-input-group-addon'>{before}</span>
+        if (textBefore === '' || textBefore === undefined) return ''
+        else return <span className='ant-input-group-addon'>{textBefore}</span>
     }
 
     const renderAfter = () => {
-        if (after === '' || after === undefined) return ''
-        else return <span className='ant-input-group-addon'>{after}</span>
+        if (textAfter === '' || textAfter === undefined) return ''
+        else return <span className='ant-input-group-addon'>{textAfter}</span>
     }
 
     return (
@@ -41,13 +41,13 @@ function InputGroup(props) {
 }
 
 InputGroup.propTypes = {
-    before: PropTypes.string,
-    after: PropTypes.string,
+    textBefore: PropTypes.string,
+    textAfter: PropTypes.string,
 }
 
 InputGroup.defaultProps = {
-    before: '',
-    after: '',
+    textBefore: '',
+    textAfter: '',
 }
 
 export default InputGroup

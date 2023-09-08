@@ -1,27 +1,24 @@
-import { DeleteOutlined, EditOutlined } from '@ant-design/icons'
-import { Popconfirm, Space, Table, Tag } from 'antd'
+import { Table } from 'antd'
 import PropTypes from 'prop-types'
-import { RowAction } from '../../../../components'
 
 function Table1(props) {
-
-    const { data, isLoading, onChange, onEdit, onDelete } = props
+    const { data, isLoading, onChange } = props
 
     const columns = [
         {
             key: '1',
             title: 'Id',
-            dataIndex: 'Id'
+            dataIndex: 'Id',
         },
         {
             key: '2',
             title: 'Series',
-            dataIndex: 'Series'
+            dataIndex: 'Series',
         },
         {
             key: '3',
             title: 'Tình trạng',
-            dataIndex: 'tt'
+            dataIndex: 'tt',
         },
     ]
 
@@ -39,9 +36,9 @@ Table1.propTypes = {
 Table1.defaultProps = {
     data: null,
     isLoading: false,
-    onChange: () => { },
-    onEdit: () => { },
-    onDelete: () => { },
+    onChange: () => {},
+    onEdit: () => {},
+    onDelete: () => {},
 }
 
 export default Table1

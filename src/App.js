@@ -46,7 +46,6 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Outlet />}>
                         <Route index element={<LogInPage />} />
-                        {/* <Route element={!isLogin ? <Navigate to='/' replace /> : <LayOutPage />}> */}
                         <Route element={<LayOutPage />}>
                             <Route path='dashboard' element={<DashboardPage />} />
                             <Route path='area'>
@@ -62,7 +61,6 @@ function App() {
                             </Route>
                         </Route>
                     </Route>
-                    {/* </Route> */}
                 </Routes>
             </AppContext.Provider>
         </ConfigProvider>
